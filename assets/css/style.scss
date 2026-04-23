@@ -3,11 +3,78 @@
 
 @import 'jekyll-theme-minimal';
 
+:root {
+  color-scheme: light;
+  --page-bg: #ffffff;
+  --page-text: #333333;
+  --page-link: #0366d6;
+  --page-link-hover: #0256c7;
+  --page-border: #eeeeee;
+  --page-accent: #f8f8f8;
+  --page-active: #eeeeee;
+}
+
+html[data-theme='dark'] {
+  color-scheme: dark;
+  --page-bg: #0d1117;
+  --page-text: #c9d1d9;
+  --page-link: #58a6ff;
+  --page-link-hover: #79c0ff;
+  --page-border: #30363d;
+  --page-accent: #161b22;
+  --page-active: #30363d;
+}
+
+html[data-theme='light'] {
+  color-scheme: light;
+  --page-bg: #ffffff;
+  --page-text: #333333;
+  --page-link: #0366d6;
+  --page-link-hover: #0256c7;
+  --page-border: #eeeeee;
+  --page-accent: #f8f8f8;
+  --page-active: #eeeeee;
+}
+
 body {
   font-family: Roboto, sans-serif;
+  background-color: var(--page-bg);
+  color: var(--page-text);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+a {
+  color: var(--page-link);
+
+  &:hover {
+    color: var(--page-link-hover);
+  }
 }
 
 header {
+  position: relative;
+
+  .theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 0.25rem 0 0.75rem;
+    padding: 0.45rem 0.75rem;
+    border: 1px solid var(--page-border);
+    border-radius: 0.35rem;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+
+    &:hover,
+    &:focus-visible {
+      background-color: var(--page-accent);
+      border-color: var(--page-text);
+    }
+  }
+
   li:first-child a, ul {
     border-radius: 0;
   }
@@ -42,7 +109,7 @@ ul.country-list {
 
   > li {
     padding: 5px;
-    border: #eee 1px solid;
+    border: var(--page-border) 1px solid;
     margin: 5px 0px;
     
     > a {
@@ -68,6 +135,9 @@ table.users-list {
   thead th {
     text-align: center;
   }
+  tbody tr:hover {
+    background-color: var(--page-accent);
+  }
   tbody td.photo {
     text-align: center;
   }
@@ -75,6 +145,10 @@ table.users-list {
 
 table.organizations-list td {
   padding: 5px 0;
+}
+
+table.organizations-list tbody tr:hover {
+  background-color: var(--page-accent);
 }
 
 ul.mode-selector {
@@ -89,7 +163,7 @@ ul.mode-selector {
 
     &.active {
       font-weight: bold;
-      background-color: #eee;
+      background-color: var(--page-active);
     }
   }
 }

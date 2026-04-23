@@ -5,6 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
+    <script>
+      (function() {
+        try {
+          var storedTheme = localStorage.getItem('theme-preference');
+          var theme = storedTheme === 'dark' || storedTheme === 'light' ? storedTheme : null;
+          if (!theme) {
+            theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          }
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (error) {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      })();
+    </script>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision }}">
     <meta name="viewport" content="width=device-width">
 
@@ -51,6 +65,7 @@
     <div class="wrapper">
       <header>
         <h1><a href=".">committers.top</a></h1>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
         <p>A list of the most active GitHub users</p>
 
         <p class="view"><a href="https://github.com/ashkulz/committers.top.git"><img src="https://img.shields.io/github/stars/ashkulz/committers.top?style=social" /></a></p>
@@ -177,7 +192,7 @@
           var row = document.getElementById(id);
           if (row) {
             row.style.fontWeight = 'bold';
-            row.style.backgroundColor = '#f8f8f8';
+            row.style.backgroundColor = 'var(--page-accent)';
           }
         }
       });
@@ -204,6 +219,7 @@
     width: 32px;
   }
   </style>
+  <script src="{{ '/assets/js/theme-toggle.js' }}"></script>
   <script src="{{ '/assets/js/lazysizes.min.js' }}" async></script>
   </body>
 </html>
