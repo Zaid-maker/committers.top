@@ -13,7 +13,7 @@ users:
     name: "Garang Makuach Deng"
     login: "garango123"
     avatarUrl: https://avatars.githubusercontent.com/u/216372077?u=f18bd230bf8f9c878dfa1d6df1a722ccdfbb23f6&v=4
-    contributions: 119
+    contributions: 127
     company: "University of the People "
     organizations: ""
 
@@ -122,19 +122,19 @@ users:
     organizations: ""
 
   - rank: 16
-    name: "Taban Denis Tabbi"
-    login: "Tabandenis"
-    avatarUrl: https://avatars.githubusercontent.com/u/62059466?v=4
-    contributions: 0
-    company: "Agricola Interest national non governmental organizations"
-    organizations: ""
-
-  - rank: 17
     name: ""
     login: "Kinqly"
     avatarUrl: https://avatars.githubusercontent.com/u/54659224?v=4
     contributions: 0
     company: "Kinqly"
+    organizations: ""
+
+  - rank: 17
+    name: "Taban Denis Tabbi"
+    login: "Tabandenis"
+    avatarUrl: https://avatars.githubusercontent.com/u/62059466?v=4
+    contributions: 0
+    company: "Agricola Interest national non governmental organizations"
     organizations: ""
 
   - rank: 18
@@ -286,7 +286,7 @@ users_public_contributions:
     name: "Garang Makuach Deng"
     login: "garango123"
     avatarUrl: https://avatars.githubusercontent.com/u/216372077?u=f18bd230bf8f9c878dfa1d6df1a722ccdfbb23f6&v=4
-    contributions: 126
+    contributions: 134
     company: "University of the People "
     organizations: ""
 
@@ -395,19 +395,19 @@ users_public_contributions:
     organizations: ""
 
   - rank: 16
-    name: "Taban Denis Tabbi"
-    login: "Tabandenis"
-    avatarUrl: https://avatars.githubusercontent.com/u/62059466?v=4
-    contributions: 0
-    company: "Agricola Interest national non governmental organizations"
-    organizations: ""
-
-  - rank: 17
     name: ""
     login: "Kinqly"
     avatarUrl: https://avatars.githubusercontent.com/u/54659224?v=4
     contributions: 0
     company: "Kinqly"
+    organizations: ""
+
+  - rank: 17
+    name: "Taban Denis Tabbi"
+    login: "Tabandenis"
+    avatarUrl: https://avatars.githubusercontent.com/u/62059466?v=4
+    contributions: 0
+    company: "Agricola Interest national non governmental organizations"
     organizations: ""
 
   - rank: 18
@@ -560,7 +560,7 @@ private_users:
     name: "Garang Makuach Deng"
     login: "garango123"
     avatarUrl: https://avatars.githubusercontent.com/u/216372077?u=f18bd230bf8f9c878dfa1d6df1a722ccdfbb23f6&v=4
-    contributions: 126
+    contributions: 134
     company: "University of the People "
     organizations: ""
 
@@ -669,19 +669,19 @@ private_users:
     organizations: ""
 
   - rank: 16
-    name: "Taban Denis Tabbi"
-    login: "Tabandenis"
-    avatarUrl: https://avatars.githubusercontent.com/u/62059466?v=4
-    contributions: 0
-    company: "Agricola Interest national non governmental organizations"
-    organizations: ""
-
-  - rank: 17
     name: ""
     login: "Kinqly"
     avatarUrl: https://avatars.githubusercontent.com/u/54659224?v=4
     contributions: 0
     company: "Kinqly"
+    organizations: ""
+
+  - rank: 17
+    name: "Taban Denis Tabbi"
+    login: "Tabandenis"
+    avatarUrl: https://avatars.githubusercontent.com/u/62059466?v=4
+    contributions: 0
+    company: "Agricola Interest national non governmental organizations"
     organizations: ""
 
   - rank: 18
@@ -837,7 +837,7 @@ private_organizations:
   - rank: 1
     name: "konetahub"
     membercount: 1
-generated: 2026-08-25T06:10:56Z
+generated: 2026-09-05T14:08:19Z
 min_followers_required: 0
 total_user_count: 34
 title: South Sudan
